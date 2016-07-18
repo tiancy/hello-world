@@ -1,5 +1,5 @@
-# Source https://leetcode.com/problems/min-stack/
-# Author cytian
+# Source  https://leetcode.com/problems/min-stack/
+# Author  cytian
 # Created 2016-07-15
 
 # Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -8,15 +8,6 @@
 # pop() -- Removes the element on top of the stack.
 # top() -- Get the top element.
 # getMin() -- Retrieve the minimum element in the stack.
-# Example:
-# MinStack minStack = new MinStack();
-# minStack.push(-2);
-# minStack.push(0);
-# minStack.push(-3);
-# minStack.getMin();   --> Returns -3.
-# minStack.pop();
-# minStack.top();      --> Returns 0.
-# minStack.getMin();   --> Returns -2.
 
 class MinStack(object):
 
@@ -25,6 +16,7 @@ class MinStack(object):
         initialize your data structure here.
         """
         self.items = []
+        self.minimums = [] # store minimum
         self.minimum = None
 
     def push(self, x):
@@ -32,28 +24,29 @@ class MinStack(object):
         :type x: int
         :rtype: void
         """
-        if len(self.items) == 0 or  x < self.minimum:
-           self.minimum = x
+        if len(self.items) == 0 or  x <= self.minimum:
+            self.minimum = x
+            self.minimums.append(x)
         self.items.append(x)
-
 
     def pop(self):
         """
         :rtype: void
         """
+        if len(self.items) == 0:
+            return
         temp = self.items.pop()
-        if temp == self.minimum and len(self.items) != 0:
-            self.minimum = self.items[0]
-            for i in self.items:
-                if i < self.minimum:
-                    self.minimum = i
-
+        if temp == self.minimum:
+            self.minimums.pop()
+            l = len(self.minimums)
+            if l != 0:
+                self.minimum = self.minimums[l-1]
 
     def top(self):
         """
         :rtype: int
         """
-        return self.items[-1]
+        return self.items[len(self.items)-1]
 
     def getMin(self):
         """
@@ -65,11 +58,11 @@ class MinStack(object):
 # Your MinStack object will be instantiated and called as such:
 obj = MinStack()
 obj.push(2)
+obj.push(3)
+obj.push(3)
 obj.push(5)
-obj.push(-3)
+obj.push(1)
 print(obj.top())
 obj.pop()
 print(obj.top())
-
-param_4 = obj.getMin()
-print(param_4)
+print(obj.getMin())
