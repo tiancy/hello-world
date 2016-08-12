@@ -36,4 +36,24 @@ public class RansomNote {
         }
         return true;
     }
+
+    public boolean canConstruct2(String ransomNote, String magazine) {
+        char[] notes = ransomNote.toCharArray();
+        int index;
+        for (int i = 0; i < notes.length; i++) {
+            if (notes[i] == '.')
+                continue;
+            else if ((index = magazine.indexOf(notes[i])) < 0)
+                return false;
+            else {
+                int j = i;
+                while ((j = ransomNote.indexOf(notes[i], j + 1)) >= 0) {
+                    if ((index = magazine.indexOf(notes[i], index + 1)) < 0)
+                        return false;
+                    notes[j] = '.';
+                }
+            }
+        }
+        return true;
+    }
 }
