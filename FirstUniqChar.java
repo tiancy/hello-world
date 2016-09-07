@@ -15,9 +15,9 @@ package leetcode;
  * s = "loveleetcode",
  * return 2.
  */
-public class FistUniqChar {
+public class FirstUniqChar {
 
-    public int fistUniqChar(String s) {
+    public int firstUniqChar(String s) {
         if (s == null || "".equals(s)) return -1;
 
         char chars[] = s.toCharArray();
@@ -32,6 +32,21 @@ public class FistUniqChar {
                     chars[index] = '.';
                 } while ((index = s.indexOf(chars[i], index+1)) >= 0);
             }
+        }
+        return -1;
+    }
+
+    public int firstUniqChar2(String s) {
+        if (s == null || "".equals(s)) return -1;
+
+        int count[] = new int[26];
+        int len = s.length();
+        for (int i = 0; i < len; i++) {
+            count[s.charAt(i)-'a']++;
+        }
+        for (int i = 0; i < len; i++) {
+            if (count[s.charAt(i)-'a'] == 1)
+                return i;
         }
         return -1;
     }
