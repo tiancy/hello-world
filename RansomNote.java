@@ -8,13 +8,64 @@ import java.util.Map;
  * Author  cytian
  * Created 2016-08-12
  *
- * Given  an  arbitrary  ransom  note  string  and  another  string  containing  letters from  all  the  magazines, 
- * write  a  function  that  will  return  true  if  the  ransom   note  can  be  constructed  from  the  magazines ;
- * otherwise,  it  will  return  false.   
+ * Given
+ an 
+arbitrary
+ ransom
+ note
+ string 
+and 
+another 
+string 
+containing 
+letters from
+ all 
+the 
+magazines,
+
+ * write 
+a 
+function 
+that 
+will 
+return 
+true 
+if 
+the 
+ransom 
+ note 
+can 
+be 
+constructed 
+from 
+the 
+magazines ;
  *
- * Each  letter  in  the  magazine  string  can  only  be  used  once  in  your  ransom  note.
+otherwise, 
+it 
+will 
+return 
+false. 
+
+
  *
- * Note:
+ * Each 
+letter
+ in
+ the
+ magazine 
+string 
+can
+ only 
+be
+ used 
+once
+ in
+ your 
+ransom
+ note.
+ *
+ * Note: 
  * You may assume that both strings contain only lowercase letters.
  *
  * canConstruct("a", "b") -> false
