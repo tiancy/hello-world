@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/***
+/**
  * Source  https://leetcode.com/problems/binary-tree-paths/
  * Author  cytian
  * Created 2016-07-28
