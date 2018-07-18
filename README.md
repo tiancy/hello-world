@@ -14,3 +14,4 @@ LeetCode Algorithm
 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Python | Hard
 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Java | Medium
 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Python | Easy
+104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Go | Easy
