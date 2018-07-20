@@ -15,3 +15,4 @@ LeetCode Algorithm
 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Java](https://github.com/tiancy/leetcode/blob/master/FindPeakElement.java) | Medium
 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Python](https://github.com/tiancy/leetcode/blob/master/minstack.py) | Easy
 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/maxdepth.go) | Easy
+100 | [Same Tree](https://leetcode.com/problems/same-tree/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/sametree.go) | Easy
