@@ -12,10 +12,10 @@ Input:     1         1
           / \       / \
          2   3     2   3
 
-		[1,2,3],   [1,2,3]
-		
+        [1,2,3],   [1,2,3]
+        
 Output: true
-		
+        
 Example 2:
 
 Input:     1         1
@@ -40,26 +40,30 @@ type TreeNode struct {
 
 var same bool
 func isSameTree(p *TreeNode, q *TreeNode) bool {
-	same = true
-	dfs(p, q)
-	return same
+    same = true
+    dfs(p, q)
+    return same
 }
 
+// Solution 1
+// Depth first search
 func dfs(p *TreeNode, q *TreeNode) {
-	if !same || p == nil && q == nil {
-		return
-	}
-	if p == nil || q == nil {
-		same = false
+    // if it was not same, return
+    if !same || p == nil && q == nil {
         return
-	}
-	if p.Val != q.Val {
-		same = false
+    }
+    // one isn`t nil, one is nil, it is not same
+    if p == nil || q == nil {
+        same = false
+        return
+    }
+    if p.Val != q.Val {
+        same = false
         return
     }
     
-	dfs(p.Left, q.Left)
-	dfs(p.Right, q.Right)
+    dfs(p.Left, q.Left)
+    dfs(p.Right, q.Right)
 }
 
 func main() {
