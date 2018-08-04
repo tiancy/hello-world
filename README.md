@@ -4,6 +4,7 @@ LeetCode Algorithm
 
 `#` | Title | Solution | Difficulty
 --- | --- | --- | ---
+872 | [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/leafsimilartrees.go) | Easy
 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/distancek.go) | Medium
 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/peakindexinmountainarray.go) | Easy
 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [Java](https://github.com/tiancy/leetcode/blob/master/FirstUniqChar.java) | Easy
