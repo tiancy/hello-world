@@ -13,6 +13,7 @@ LeetCode Algorithm
 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [Java](https://github.com/tiancy/leetcode/blob/master/BinaryTreePaths.java) | Easy
 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Python](https://github.com/tiancy/leetcode/blob/master/searchmatrix.py) | Medium
 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Python](https://github.com/tiancy/leetcode/blob/master/sliding_window_maximum.py) | Hard
+198 | [House Robber](https://leetcode.com/problems/house-robber/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/houserobber.go) | Easy
 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Java](https://github.com/tiancy/leetcode/blob/master/FindPeakElement.java) | Medium
 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Python](https://github.com/tiancy/leetcode/blob/master/minstack.py) | Easy
 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [Go](https://github.com/tiancy/leetcode/blob/master/maxdepth.go) | Easy
