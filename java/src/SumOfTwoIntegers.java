@@ -1,5 +1,3 @@
-package test;
-
 /**
  * Source  https://leetcode.com/problems/sum-of-two-integers/
  * Author  cytian

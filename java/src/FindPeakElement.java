@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * Source  https://leetcode.com/problems/find-peak-element/
  * Author  cytian

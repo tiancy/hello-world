@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * Source https://leetcode.com/problems/first-unique-character-in-a-string/
  * Author cytian

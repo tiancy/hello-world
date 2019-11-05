@@ -1,4 +1,4 @@
-package leetcode;
+package BinaryTreePaths;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,15 +21,13 @@ import java.util.List;
  * ["1->2->5", "1->3"]
  */
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+// Definition for a binary tree node.
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
 
 public class BinaryTreePaths {
 
