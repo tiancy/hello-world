@@ -11,6 +11,7 @@ LeetCode Algorithm
 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [Java](https://github.com/tiancy/leetcode/blob/master/FirstUniqChar.java) | Easy
 374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [Python](https://github.com/tiancy/leetcode/blob/master/guessnumber.py) | Easy
 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [Java](https://github.com/tiancy/leetcode/blob/master/SumOfTwoIntegers.java) | Easy
+287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Go](https://github.com/tiancy/leetcode/blob/master/findduplicate.go) | Medium
 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [Java](https://github.com/tiancy/leetcode/blob/master/BinaryTreePaths.java) | Easy
 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Python](https://github.com/tiancy/leetcode/blob/master/searchmatrix.py) | Medium
 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Python](https://github.com/tiancy/leetcode/blob/master/sliding_window_maximum.py) | Hard
