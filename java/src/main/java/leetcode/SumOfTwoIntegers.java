@@ -1,3 +1,5 @@
+package leetcode;
+
 /**
  * Source  https://leetcode.com/problems/sum-of-two-integers/
  * Author  cytian
@@ -9,14 +11,6 @@
  * Example: Given a = 1 and b = 2, return 3.
  */
 public class SumOfTwoIntegers {
-    public static void main(String[] args) {
-        SumOfTwoIntegers t = new SumOfTwoIntegers();
-        long start = System.nanoTime();
-        int i = t.getSum(2, -3);
-        long end = System.nanoTime();
-        System.err.println("runTime:" + (end - start));
-        System.out.println("sum:" + i);
-    }
 
     public int getSum(int a, int b) {
         int aBit, bBit;
