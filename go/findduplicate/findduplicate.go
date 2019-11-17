@@ -20,7 +20,8 @@ Example 2:
 	Output: 3
 
 */
-package main
+
+package findduplicate
 
 import (
 	"fmt"
@@ -64,10 +65,4 @@ func findDuplicate3(nums []int) int {
 		}
 	}
 	return -1
-}
-
-func main() {
-	nums := []int{1, 2, 4, 2, 3}
-	r := findDuplicate3(nums)
-	fmt.Println(r)
 }

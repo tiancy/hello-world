@@ -9,18 +9,18 @@ Given a binary tree, find its maximum depth.
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 Note: A leaf is a node with no children.
 
-Related Topics 
+Related Topics
 Tree, Depth-first Search
 */
 package main
 
 import "fmt"
 
-// Definition for a binary tree node.
+// TreeNode Definition for a binary tree node.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 var depth int
@@ -57,10 +57,10 @@ func dfs2(node *TreeNode, level int) {
 		}
 	} else {
 		if node.Left != nil {
-			dfs(node.Left, level + 1)
+			dfs(node.Left, level+1)
 		}
 		if node.Right != nil {
-			dfs(node.Right, level + 1)
+			dfs(node.Right, level+1)
 		}
 	}
 }
@@ -70,18 +70,18 @@ func maxDepth2(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-    l := maxDepth(root.Left)
-    r := maxDepth(root.Right)
-    if l > r {
-        return 1 + l
-    }
-    return 1 + r
+	l := maxDepth(root.Left)
+	r := maxDepth(root.Right)
+	if l > r {
+		return 1 + l
+	}
+	return 1 + r
 }
 
 func main() {
 	n2 := &TreeNode{2, &TreeNode{7, nil, nil}, &TreeNode{4, nil, nil}}
 	n5 := &TreeNode{5, &TreeNode{6, nil, nil}, n2}
-	n0 := &TreeNode{Val:0}
+	n0 := &TreeNode{Val: 0}
 	root := TreeNode{3, n5, &TreeNode{1, n0, &TreeNode{8, nil, nil}}}
 	d := maxDepth(&root)
 	fmt.Println(d)

@@ -32,7 +32,8 @@ Output: 7
 Related Topics
 Tree, Depth-first Search, Breadth-first Search
 */
-package main
+
+package bottomleftvalue
 
 // TreeNode Definition for a binary tree node.
 type TreeNode struct {
@@ -64,8 +65,4 @@ func dfs(node *TreeNode, l int) {
 	}
 
 	dfs(node.Right, l)
-}
-
-func main() {
-
 }

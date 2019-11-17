@@ -27,7 +27,7 @@ Related Topics
 Dynamic Programming
 */
 
-package main
+package houserobber
 
 // reference https://leetcode.com/problems/house-robber/discuss/55693/C-1ms-O(1)space-very-simple-solution
 func rob(nums []int) int {
@@ -53,5 +53,3 @@ func max(a, b int) int {
 	}
 	return b
 }
-
-func main() {}

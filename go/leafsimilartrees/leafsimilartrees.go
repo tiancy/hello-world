@@ -17,7 +17,7 @@ Related Topics
 Tree, Depth-first Search
 */
 
-package main
+package leafsimilartrees
 
 // TreeNode Definition for a binary tree node.
 type TreeNode struct {
@@ -58,8 +58,4 @@ func dfs(node *TreeNode, lastNode *[]int) {
 	}
 	dfs(node.Left, lastNode)
 	dfs(node.Right, lastNode)
-}
-
-func main() {
-
 }
